@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__title {
+  margin: 0 0 0 104px;
+}
+
+.footer__items {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0;
+  margin: 0 104px 0 0;
+  /* font-family: "Cabinet Grotesk", sans-serif; */
+  /* font-weight: 700;
+    font-size: 20px;
+    line-height: 24px; */
+}

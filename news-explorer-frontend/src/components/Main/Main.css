@@ -1,0 +1,22 @@
+.main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__content {
+  padding: 80px 400px;
+  display: flex;
+  flex-direction: column;
+  max-width: 608px;
+}
+
+.main__title {
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.main__description {
+  margin-bottom: 88px;
+  color: #fff;
+}
