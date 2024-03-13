@@ -20,4 +20,15 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.about__description {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }

@@ -14,9 +14,19 @@
 .main__title {
   margin-bottom: 32px;
   color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  text-align: left;
 }
 
 .main__description {
   margin-bottom: 88px;
   color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
 }

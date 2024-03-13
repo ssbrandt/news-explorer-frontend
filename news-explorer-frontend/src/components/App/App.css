@@ -1,4 +1,28 @@
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-family: 400;
+  src: url("../../fonts/RobotoSlab-Regular.ttf") formet(tff);
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../../fonts/RobotoSlab-Medium.ttf") format(tff);
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../../fonts/RobotoSlab-Bold.ttf") format(tff0);
+}
+
 .App {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   min-height: 100vh;
   margin: 0;

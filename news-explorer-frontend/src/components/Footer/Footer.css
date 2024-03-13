@@ -7,10 +7,16 @@
   max-height: 40px;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 80px;
 }
 
 .footer__title {
   margin: 0 0 0 104px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #b6bcbf;
 }
 
 .footer__items {
@@ -20,8 +26,8 @@
   column-gap: 20px;
   padding: 0;
   margin: 0 104px 0 0;
-  /* font-family: "Cabinet Grotesk", sans-serif; */
-  /* font-weight: 700;
-    font-size: 20px;
-    line-height: 24px; */
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
