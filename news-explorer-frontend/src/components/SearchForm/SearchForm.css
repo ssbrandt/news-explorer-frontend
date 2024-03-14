@@ -1,0 +1,31 @@
+.searchform__container {
+}
+
+.searchform__form {
+  display: flex;
+  position: relative;
+}
+
+.searchform__input {
+  width: 608px;
+  height: 64px;
+  padding-left: 24px;
+  border-radius: 40px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.searchform__submit {
+  width: 168px;
+  height: 64px;
+  background-color: #2f71e5;
+  color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 40px;
+  border: none;
+  position: absolute;
+  right: 0px;
+}
