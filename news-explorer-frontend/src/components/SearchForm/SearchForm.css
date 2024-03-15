@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+.searchform__input:focus {
+  outline: none;
+}
+
 .searchform__submit {
   width: 168px;
   height: 64px;
@@ -28,4 +32,8 @@
   border: none;
   position: absolute;
   right: 0px;
+}
+
+.searchform__submit:hover {
+  cursor: pointer;
 }
