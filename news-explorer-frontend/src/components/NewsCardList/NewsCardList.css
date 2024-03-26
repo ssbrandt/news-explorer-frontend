@@ -1,0 +1,39 @@
+.cards {
+  background: #f5f6f7;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards__title {
+  margin: 0 0 64px 104px;
+  text-align: left;
+  padding-top: 80px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.cards__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 16px;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.cards__button {
+  margin: 64px 0 80px 0;
+  width: 288px;
+  height: 64px;
+  background: #e8e8e8;
+  border: none;
+  border-radius: 40px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}

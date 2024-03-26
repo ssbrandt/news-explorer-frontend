@@ -1,4 +1,5 @@
 import "./NewsCard.css";
+import "./NewsCard.css";
 import React from "react";
 import cardimage from "../../images/cardimage.png";
 
