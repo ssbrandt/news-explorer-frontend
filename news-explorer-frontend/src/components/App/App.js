@@ -7,8 +7,7 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 import About from "../About/About";
 import Footer from "../Footer/Footer";
-import NewsCard from "../NewsCard/NewsCard";
-import NewsCardList from "../NewsCardList/NewsCardList";
+import SearchResults from "../SearchResults/SearchResults";
 import SignInModal from "../SignInModal/SignInModal";
 import SignUpModal from "../SignUpModal/SignUpModal";
 import SavedNewsHeader from "../SavedNewsHeader/SavedNewsHeader";
@@ -71,7 +70,7 @@ function App() {
             <Header onSignInModal={handleSignInModal} />
             <Main />
           </div>
-          <NewsCardList />
+          <SearchResults />
           <About />
           <Footer />
         </Route>
@@ -79,7 +78,6 @@ function App() {
         <Route exact path="/saved">
           <Header />
           <SavedNewsHeader />
-          <NewsCardList />
           <Footer />
         </Route>
       </Switch>

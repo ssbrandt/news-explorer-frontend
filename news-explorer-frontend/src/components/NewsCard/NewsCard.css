@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 8px;
   width: 400px;
   height: 576px;
 }
@@ -12,12 +11,14 @@
   width: 400px;
   height: 272px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .card__info {
   padding: 24px;
   text-align: left;
+  background-color: #fff;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .card__date {
