@@ -9,14 +9,65 @@ import About from "../About/About";
 import Footer from "../Footer/Footer";
 import NewsCard from "../NewsCard/NewsCard";
 import NewsCardList from "../NewsCardList/NewsCardList";
+import SignInModal from "../SignInModal/SignInModal";
+import SignUpModal from "../SignUpModal/SignUpModal";
 
 function App() {
+  const [activeModal, setActiveModal] = React.useState("");
+
+  const handleSignInModal = () => {
+    setActiveModal("signin");
+  };
+
+  const handleSignUpModal = () => {
+    setActiveModal("signup");
+  };
+
+  const handleCloseModal = () => {
+    setActiveModal("");
+  };
+
+  React.useEffect(() => {
+    if (!activeModal) return;
+
+    const handleEscClose = (e) => {
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    document.addEventListener("keydown", handleEscClose);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscClose);
+    };
+  }, [activeModal]);
+
+  React.useEffect(() => {
+    if (!activeModal) return;
+
+    const handleCloseOnClick = (evt) => {
+      if (
+        evt.target.classList.contains("modal") &&
+        !evt.target.closest(".modal__container")
+      ) {
+        handleCloseModal();
+      }
+    };
+
+    window.addEventListener("click", handleCloseOnClick);
+
+    return () => {
+      window.removeEventListener("click", handleCloseOnClick);
+    };
+  }, [activeModal]);
+
   return (
     <div className="App">
       <Switch>
         <Route exact path="/">
           <div className="background__image">
-            <Header />
+            <Header onSignInModal={handleSignInModal} />
             <Main />
           </div>
           <NewsCardList />
@@ -29,6 +80,22 @@ function App() {
           <h1>saved articles</h1>
         </Route>
       </Switch>
+
+      {activeModal === "signin" && (
+        <SignInModal
+          onCloseModal={handleCloseModal}
+          isOpen={activeModal === "signin"}
+          onRedirect={handleSignUpModal}
+        />
+      )}
+
+      {activeModal === "signup" && (
+        <SignUpModal
+          onCloseModal={handleCloseModal}
+          isOpen={activeModal === "signup"}
+          onRedirect={handleSignInModal}
+        />
+      )}
     </div>
   );
 }
