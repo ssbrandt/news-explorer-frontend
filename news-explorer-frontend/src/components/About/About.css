@@ -19,16 +19,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.about__header {
   text-align: left;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 46px;
+  color: #1a1b22;
 }
 
 .about__description {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  text-align: left;
 }

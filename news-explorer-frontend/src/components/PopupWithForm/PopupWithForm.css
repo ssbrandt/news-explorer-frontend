@@ -26,9 +26,9 @@
 
 .modal__title {
   margin: 0px;
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 900;
   text-align: left;
 }
@@ -61,7 +61,7 @@
   margin-top: 24px;
   display: block;
   width: 100%;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
@@ -76,7 +76,7 @@
   margin-bottom: 5px;
   margin-top: 9px;
   padding-bottom: 8px;
-  font-family: "Cabinet Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -105,10 +105,10 @@
 
 .form__redirect {
   all: unset;
-  font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
   opacity: 50%;
   margin-left: 12px;
   position: absolute;

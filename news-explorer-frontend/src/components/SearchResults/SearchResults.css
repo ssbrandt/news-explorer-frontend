@@ -26,10 +26,11 @@
   background: #fff;
   border: none;
   border-radius: 40px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
+  color: #1a1b22;
 }
 
 .search-results__button:hover {
