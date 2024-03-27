@@ -11,6 +11,7 @@ import NewsCard from "../NewsCard/NewsCard";
 import NewsCardList from "../NewsCardList/NewsCardList";
 import SignInModal from "../SignInModal/SignInModal";
 import SignUpModal from "../SignUpModal/SignUpModal";
+import SavedNewsHeader from "../SavedNewsHeader/SavedNewsHeader";
 
 function App() {
   const [activeModal, setActiveModal] = React.useState("");
@@ -77,7 +78,9 @@ function App() {
 
         <Route exact path="/saved">
           <Header />
-          <h1>saved articles</h1>
+          <SavedNewsHeader />
+          <NewsCardList />
+          <Footer />
         </Route>
       </Switch>
 
