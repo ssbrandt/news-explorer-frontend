@@ -15,6 +15,8 @@ import SavedCards from "../SavedCards/SavedCards";
 
 function App() {
   const [activeModal, setActiveModal] = React.useState("");
+  const [loggedIn, setLoggedIn] = React.useState(false);
+  const [darkMode, setDarkMode] = React.useState(false);
 
   const handleSignInModal = () => {
     setActiveModal("signin");
@@ -68,7 +70,11 @@ function App() {
       <Switch>
         <Route exact path="/">
           <div className="background__image">
-            <Header onSignInModal={handleSignInModal} />
+            <Header
+              onSignInModal={handleSignInModal}
+              loggedIn={true}
+              darkMode={true}
+            />
             <Main />
           </div>
           <SearchResults />
@@ -76,8 +82,8 @@ function App() {
           <Footer />
         </Route>
 
-        <Route exact path="/saved">
-          <Header />
+        <Route exact path="/saved-news">
+          <Header loggedIn={loggedIn} darkMode={darkMode} />
           <SavedNewsHeader />
           <SavedCards />
           <Footer />
