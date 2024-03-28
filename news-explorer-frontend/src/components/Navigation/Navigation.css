@@ -44,6 +44,10 @@
   background-color: transparent;
 }
 
+.nav__button:hover {
+  cursor: pointer;
+}
+
 .nav__button-dark {
   color: #1a1b22;
   font-family: "Roboto", sans-serif;
@@ -55,6 +59,10 @@
   width: 112px;
   height: 48px;
   background-color: transparent;
+}
+
+.nav__button-dark {
+  cursor: pointer;
 }
 
 .nav__logout {
