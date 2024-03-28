@@ -11,6 +11,7 @@ import SearchResults from "../SearchResults/SearchResults";
 import SignInModal from "../SignInModal/SignInModal";
 import SignUpModal from "../SignUpModal/SignUpModal";
 import SavedNewsHeader from "../SavedNewsHeader/SavedNewsHeader";
+import NewsCardList from "../NewsCardList/NewsCardList";
 
 function App() {
   const [activeModal, setActiveModal] = React.useState("");
@@ -78,6 +79,7 @@ function App() {
         <Route exact path="/saved">
           <Header />
           <SavedNewsHeader />
+          <NewsCardList />
           <Footer />
         </Route>
       </Switch>

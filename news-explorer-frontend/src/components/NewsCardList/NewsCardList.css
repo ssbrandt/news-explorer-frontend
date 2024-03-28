@@ -1,5 +1,8 @@
 .cards {
   background: #f5f6f7;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .cards__list {
