@@ -9,6 +9,8 @@ function NewsCardList({}) {
         <NewsCard />
         <NewsCard />
         <NewsCard />
+        <NewsCard />
+        <NewsCard />
       </ul>
     </div>
   );
