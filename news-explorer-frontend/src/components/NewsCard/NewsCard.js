@@ -6,6 +6,15 @@ import bookmark from "../../images/bookmark.svg";
 import trashcan from "../../images/trash.svg";
 
 function NewsCard({ loggedIn }) {
+  const [showBadgeMessage, setShowBadgeMessage] = React.useState(
+    "card__select-hidden"
+  );
+
+  const handleBadgeClick = () => {
+    showBadgeMessage === "card__select-hidden"
+      ? setShowBadgeMessage("card__select")
+      : setShowBadgeMessage("card__select-hidden");
+  };
   return (
     <li className="card">
       <img src={cardimage} alt="news" className="card__image" />
@@ -22,10 +31,10 @@ function NewsCard({ loggedIn }) {
         </p>
         <p className="card__source">National Geographic</p>
       </div>
-      <div className="card__badge">
+      <div className="card__badge" onClick={handleBadgeClick}>
         <img src={loggedIn ? bookmark : trashcan} alt="bookmark" />
       </div>
-      <div className="card__select">
+      <div className={showBadgeMessage}>
         <p className="card__select_text">
           {loggedIn ? "Sign in to save Article" : "Removed from Save"}
         </p>

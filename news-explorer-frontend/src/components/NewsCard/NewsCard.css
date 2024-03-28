@@ -71,7 +71,15 @@
   align-items: center;
 }
 
+.card__badge:hover {
+  cursor: pointer;
+}
+
+.card__select-hidden {
+  visibility: hidden;
+}
 .card__select {
+  visibility: visible;
   height: 40px;
   background-color: #fff;
   border-radius: 8px;
