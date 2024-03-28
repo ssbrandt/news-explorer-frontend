@@ -16,3 +16,13 @@
     padding-left: 40px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .saved-cards {
+    padding: 24px 16px;
+  }
+
+  .saved-cards__container {
+    padding: 0;
+  }
+}

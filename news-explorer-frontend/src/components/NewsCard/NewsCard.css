@@ -92,3 +92,15 @@
     overflow: hidden;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .card {
+    height: 440px;
+    width: 288px;
+  }
+
+  .card__image {
+    height: 196px;
+    width: 288px;
+  }
+}
