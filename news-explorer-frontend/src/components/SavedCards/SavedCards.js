@@ -2,11 +2,11 @@ import "./SavedCards.css";
 import React from "react";
 import NewsCardList from "../NewsCardList/NewsCardList";
 
-function SavedCards() {
+function SavedCards({ loggedIn }) {
   return (
     <section className="saved-cards">
       <div className="saved-cards__container">
-        <NewsCardList />
+        <NewsCardList loggedIn={loggedIn} />
       </div>
     </section>
   );

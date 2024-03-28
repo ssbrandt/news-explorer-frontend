@@ -2,15 +2,15 @@ import "./NewsCardList.css";
 import React from "react";
 import NewsCard from "../NewsCard/NewsCard";
 
-function NewsCardList({}) {
+function NewsCardList({ loggedIn }) {
   return (
     <div className="cards">
       <ul className="cards__list">
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
-        <NewsCard />
+        <NewsCard loggedIn={loggedIn} />
+        <NewsCard loggedIn={loggedIn} />
+        <NewsCard loggedIn={loggedIn} />
+        <NewsCard loggedIn={loggedIn} />
+        <NewsCard loggedIn={loggedIn} />
       </ul>
     </div>
   );

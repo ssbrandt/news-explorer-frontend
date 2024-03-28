@@ -77,7 +77,7 @@ function App() {
             />
             <Main />
           </div>
-          <SearchResults />
+          <SearchResults loggedIn={true} />
           <About />
           <Footer />
         </Route>
@@ -85,7 +85,7 @@ function App() {
         <Route exact path="/saved-news">
           <Header loggedIn={loggedIn} darkMode={darkMode} />
           <SavedNewsHeader />
-          <SavedCards />
+          <SavedCards loggedIn={loggedIn} />
           <Footer />
         </Route>
       </Switch>
