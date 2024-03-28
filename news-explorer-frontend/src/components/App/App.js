@@ -12,6 +12,7 @@ import SignInModal from "../SignInModal/SignInModal";
 import SignUpModal from "../SignUpModal/SignUpModal";
 import SavedNewsHeader from "../SavedNewsHeader/SavedNewsHeader";
 import SavedCards from "../SavedCards/SavedCards";
+import { cards } from "../../utils/cards";
 
 function App() {
   const [activeModal, setActiveModal] = React.useState("");
@@ -77,7 +78,7 @@ function App() {
             />
             <Main />
           </div>
-          <SearchResults loggedIn={true} />
+          <SearchResults loggedIn={true} cards={cards} />
           <About />
           <Footer />
         </Route>
@@ -85,7 +86,7 @@ function App() {
         <Route exact path="/saved-news">
           <Header loggedIn={loggedIn} darkMode={darkMode} />
           <SavedNewsHeader />
-          <SavedCards loggedIn={loggedIn} />
+          <SavedCards loggedIn={loggedIn} cards={cards} />
           <Footer />
         </Route>
       </Switch>
