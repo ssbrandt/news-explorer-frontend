@@ -5,10 +5,12 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 104px;
+  box-sizing: border-box;
 }
 
 .search-results__title {
-  margin: 0 0 64px 104px;
+  margin: 0 0 64px 0;
   text-align: left;
   padding-top: 80px;
   font-family: "Roboto Slab", sans-serif;
@@ -34,4 +36,13 @@
 .search-results__button:hover {
   cursor: pointer;
   background: #e8e8e8;
+}
+
+@media screen and (max-width: 880px) {
+  .search-results {
+    max-width: 880px;
+  }
+  .search-results__container {
+    padding: 40px;
+  }
 }

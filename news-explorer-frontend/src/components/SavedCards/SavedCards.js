@@ -4,9 +4,11 @@ import NewsCardList from "../NewsCardList/NewsCardList";
 
 function SavedCards() {
   return (
-    <div className="saved-cards">
-      <NewsCardList />
-    </div>
+    <section className="saved-cards">
+      <div className="saved-cards__container">
+        <NewsCardList />
+      </div>
+    </section>
   );
 }
 

@@ -1,18 +1,18 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   max-height: 40px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /* box-shadow: 0px -1px 0px 0px rgb(255 255 255 /20%) inset; */
+  padding: 30px 104px;
+  box-sizing: border-box;
   box-shadow: 0px -1px 0px 0px rgb(0 0 0 /20%) inset;
 }
 
 .header__title {
-  margin: 0 0 0 104px;
+  margin: 0;
   color: #000;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
@@ -26,7 +26,7 @@
   align-items: center;
   column-gap: 20px;
   padding: 0;
-  margin: 0 104px 0 0;
+  margin: 0;
   color: #000;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -45,4 +45,10 @@
   width: 176px;
   height: 48px;
   background-color: transparent;
+}
+
+@media screen and (max-width: 880px) {
+  .header {
+    padding: 30px 40px;
+  }
 }

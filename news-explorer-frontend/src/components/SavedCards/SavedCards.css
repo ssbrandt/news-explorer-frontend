@@ -1,8 +1,18 @@
 .saved-cards {
+  background-color: #f5f6f7;
+}
+
+.saved-cards__container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  background-color: #f5f6f7;
-  padding-top: 62px;
-  padding-bottom: 62px;
+  padding: 62px 104px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 880px) {
+  .saved-cards {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }

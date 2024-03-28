@@ -2,12 +2,13 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .main__content {
-  padding: 80px 400px;
-  display: flex;
-  flex-direction: column;
+  padding: 80px 104px;
   max-width: 608px;
 }
 
@@ -32,6 +33,9 @@
 }
 
 @media screen and (max-width: 880px) {
+  .main {
+    max-width: 880px;
+  }
   .main__content {
     max-width: 452px;
     padding: 80px 160px;
