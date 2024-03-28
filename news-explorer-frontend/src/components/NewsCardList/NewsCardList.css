@@ -13,3 +13,14 @@
   margin: 0px;
   list-style-type: none;
 }
+
+@media screen and (max-width: 880px) {
+  .cards {
+    max-width: 688px;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 224px);
+    gap: 8px;
+  }
+}

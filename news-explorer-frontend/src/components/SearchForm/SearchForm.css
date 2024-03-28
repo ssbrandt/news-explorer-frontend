@@ -1,6 +1,3 @@
-.searchform__container {
-}
-
 .searchform__form {
   display: flex;
   position: relative;
@@ -47,4 +44,16 @@
 .searchform__submit:active {
   cursor: pointer;
   background-color: #2a65cc;
+}
+
+@media screen and (max-width: 880px) {
+  .searchform__input {
+    width: 452px;
+    height: 56px;
+  }
+
+  .searchform__submit {
+    width: 160px;
+    height: 56px;
+  }
 }

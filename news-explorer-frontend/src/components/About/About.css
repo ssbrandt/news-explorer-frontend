@@ -10,8 +10,8 @@
   width: 464px;
   border-radius: 50%;
   margin-top: 80px;
-  margin-left: 104px;
-  margin-right: 65px;
+  padding-left: 104px;
+  padding-right: 65px;
 }
 
 .about__content {
@@ -36,4 +36,33 @@
   font-size: 18px;
   line-height: 24px;
   text-align: left;
+}
+
+@media screen and (max-width: 880px) {
+  .about {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .about__image {
+    width: 232px;
+    height: 232px;
+    margin-top: 61px;
+    /* margin-left: 40px; */
+    margin-right: 32px;
+    padding: 0px;
+  }
+
+  .about__content {
+    max-width: 424px;
+  }
+
+  .about__header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
