@@ -56,12 +56,22 @@
 
 @media screen and (max-width: 500px) {
   .footer {
-    margin-top: 128px;
+    height: 200px;
     max-width: 500px;
     padding: 20px 16px;
     display: flex;
     flex-direction: column-reverse;
-    align-items: space-between;
+    justify-content: space-between;
+  }
+
+  .footer__items {
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .footer__item {
+    padding-bottom: 10px;
   }
 
   .footer__text {

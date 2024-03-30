@@ -127,3 +127,37 @@
 .form__submit-options {
   display: flex;
 }
+
+@media screen and (max-width: 500px) {
+  .modal {
+    width: 100vw;
+  }
+
+  .modal__container {
+    width: 100vw;
+    max-width: 500px;
+    height: 90vh;
+  }
+
+  .modal__close {
+    top: -30px;
+    right: 10px;
+    height: 14px;
+    width: 14px;
+  }
+
+  .form__submit {
+    width: 282px;
+    height: 64px;
+    margin-top: 16px;
+  }
+
+  .form__submit-options {
+    justify-content: center;
+  }
+
+  .form__redirect {
+    top: -160px;
+    left: 205px;
+  }
+}

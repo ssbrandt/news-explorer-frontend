@@ -10,7 +10,7 @@ function Footer() {
       <ul className="footer__items">
         <div className="footer__text">
           <li className="footer__item">Home</li>
-          <li className="footer_item">Practicum</li>
+          <li className="footer__item">Practicum</li>
         </div>
         <div className="footer__images">
           <li className="footer_item">
