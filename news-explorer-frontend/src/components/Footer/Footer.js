@@ -8,8 +8,10 @@ function Footer() {
     <footer className="footer">
       <h2 className="footer__title">2024 Supersite, Powered by News API</h2>
       <ul className="footer__items">
-        <li className="footer__item">Home</li>
-        <li className="footer_item">Practicum</li>
+        <div className="footer__text">
+          <li className="footer__item">Home</li>
+          <li className="footer_item">Practicum</li>
+        </div>
         <div className="footer__images">
           <li className="footer_item">
             <img src={github} alt="github" />

@@ -68,3 +68,67 @@
 .nav__logout {
   margin-left: 10px;
 }
+
+.nav__hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    background-color: #1a1b22;
+    width: 100vw;
+  }
+
+  .nav__hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  .nav__items {
+    display: none;
+  }
+
+  .nav__items-active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #1a1b22;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .nav__item {
+    color: #fff;
+    padding: 16px;
+    align-self: center;
+  }
+
+  .nav__item-dark {
+    color: #fff;
+    padding: 16px;
+    align-self: center;
+  }
+
+  .nav__item-active {
+    border-bottom: none;
+  }
+
+  .nav__button {
+    width: 288px;
+    height: 56px;
+  }
+
+  .nav__button-dark {
+    width: 288px;
+    height: 56px;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}

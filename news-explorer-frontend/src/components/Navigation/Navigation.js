@@ -2,11 +2,29 @@ import "./Navigation.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import logOutImage from "../../images/logout.svg";
+import hamburger from "../../images/hamburger.svg";
+import hamburgerDark from "../../images/hamburger-dark.svg";
+import close from "../../images/close.svg";
 
 function Navigation({ onSignInModal, loggedIn, darkMode }) {
+  const [menuState, setMenuState] = React.useState("nav__items");
+
+  const handleMenuClick = () => {
+    console.log("click");
+    menuState === "nav__items-active"
+      ? setMenuState("nav__items")
+      : setMenuState("nav__items-active");
+
+    console.log(menuState);
+  };
+
   return (
     <div className="nav">
-      <ul className="nav__items">
+      <div className="nav__hamburger" onClick={handleMenuClick}>
+        <img src={menuState === "nav__items" ? hamburger : close} />
+      </div>
+
+      <ul className={menuState}>
         {loggedIn ? (
           <>
             {" "}

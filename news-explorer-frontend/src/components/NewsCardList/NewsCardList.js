@@ -7,13 +7,8 @@ function NewsCardList({ loggedIn, cards }) {
     <div className="cards">
       <ul className="cards__list">
         {cards.map((item) => (
-          <NewsCard loggedIn={loggedIn} card={item} />
+          <NewsCard loggedIn={loggedIn} key={item._id} card={item} />
         ))}
-        {/* <NewsCard loggedIn={loggedIn} />
-        <NewsCard loggedIn={loggedIn} />
-        <NewsCard loggedIn={loggedIn} />
-        <NewsCard loggedIn={loggedIn} />
-        <NewsCard loggedIn={loggedIn} /> */}
       </ul>
     </div>
   );
