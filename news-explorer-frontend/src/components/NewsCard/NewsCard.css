@@ -169,4 +169,20 @@
     height: 196px;
     width: 288px;
   }
+
+  .card__badge {
+    top: 16px;
+    right: 16px;
+  }
+
+  .card__keyword-visible {
+    top: 16px;
+    left: 16px;
+  }
+
+  .card__select {
+    top: 16px;
+    right: 56px;
+    padding: 11px 10px;
+  }
 }

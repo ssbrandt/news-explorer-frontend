@@ -4,24 +4,30 @@ import { Link } from "react-router-dom";
 import logOutImage from "../../images/logout.svg";
 import hamburger from "../../images/hamburger.svg";
 import hamburgerDark from "../../images/hamburger-dark.svg";
-import close from "../../images/close.svg";
+import closeSmall from "../../images/close-small.svg";
 
 function Navigation({ onSignInModal, loggedIn, darkMode }) {
   const [menuState, setMenuState] = React.useState("nav__items");
 
   const handleMenuClick = () => {
-    console.log("click");
     menuState === "nav__items-active"
       ? setMenuState("nav__items")
       : setMenuState("nav__items-active");
-
-    console.log(menuState);
   };
 
   return (
     <div className="nav">
       <div className="nav__hamburger" onClick={handleMenuClick}>
-        <img src={menuState === "nav__items" ? hamburger : close} />
+        <img
+          src={
+            menuState === "nav__items"
+              ? loggedIn
+                ? hamburger
+                : hamburgerDark
+              : closeSmall
+          }
+          alt="menucontrol"
+        />
       </div>
 
       <ul className={menuState}>
@@ -55,7 +61,7 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
             <li className="nav__item">
               <button type="text" className="nav__button-dark">
                 Elise
-                <img src={logOutImage} className="nav__logout" />
+                <img src={logOutImage} className="nav__logout" alt="logout" />
               </button>
             </li>
           </>
