@@ -69,4 +69,7 @@
     list-style: 34px;
     margin-bottom: 50px;
   }
+  .saved-news__keywords {
+    width: 100%;
+  }
 }

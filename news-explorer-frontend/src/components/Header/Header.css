@@ -51,14 +51,13 @@
 @media screen and (max-width: 500px) {
   .header {
     flex-direction: column;
-    background-color: #1a1b22;
     align-items: flex-start;
     padding: 0px;
     max-height: 400px;
+    opacity: 0.9;
   }
   .header-dark {
     flex-direction: column;
-    background-color: #1a1b22;
     align-items: flex-start;
     padding: 0px;
     max-height: 400px;
@@ -68,8 +67,6 @@
     font-size: 16px;
     line-height: 18px;
     padding: 16px;
-    background-color: #fff;
-    color: #1a1b22;
     width: 100vw;
     text-align: left;
     box-sizing: border-box;
@@ -80,7 +77,6 @@
     font-size: 16px;
     line-height: 18px;
     padding: 16px;
-    background-color: #1a1b22;
     width: 100vw;
     text-align: left;
     box-sizing: border-box;
