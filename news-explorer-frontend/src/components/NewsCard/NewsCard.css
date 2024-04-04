@@ -16,7 +16,6 @@
 
 .card__info {
   height: 304px;
-
   padding: 24px;
   text-align: left;
   background-color: #fff;
@@ -79,6 +78,14 @@
 
 .card__select-hidden {
   visibility: hidden;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 26px;
+  right: 68px;
+  padding: 11px 20px;
+  box-sizing: border-box;
 }
 .card__select {
   visibility: visible;
