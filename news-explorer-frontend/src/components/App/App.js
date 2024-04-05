@@ -12,6 +12,7 @@ import SignInModal from "../SignInModal/SignInModal";
 import SignUpModal from "../SignUpModal/SignUpModal";
 import SavedNewsHeader from "../SavedNewsHeader/SavedNewsHeader";
 import SavedCards from "../SavedCards/SavedCards";
+import Preloader from "../Preloader/Preloader";
 import { cards } from "../../utils/cards";
 
 function App() {
@@ -78,7 +79,9 @@ function App() {
             />
             <Main />
           </div>
+          <Preloader />
           <SearchResults loggedIn={true} cards={cards} />
+
           <About />
           <Footer />
         </Route>

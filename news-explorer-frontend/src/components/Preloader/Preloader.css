@@ -1,3 +1,12 @@
+.circle-preloader__container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .circle-preloader {
   display: block;
   width: 50px;
@@ -7,14 +16,21 @@
 
   border-radius: 50%;
 
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  margin: auto; */
 
   animation: spin 0.75s infinite linear;
+}
+
+.circle-preloader__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 @keyframes spin {
