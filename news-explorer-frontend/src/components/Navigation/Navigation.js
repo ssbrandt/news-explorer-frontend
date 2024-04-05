@@ -8,15 +8,21 @@ import closeSmall from "../../images/close-small.svg";
 
 function Navigation({ onSignInModal, loggedIn, darkMode }) {
   const [menuState, setMenuState] = React.useState("nav__items");
+  const [navOverlay, setNavOverlay] = React.useState("nav");
 
   const handleMenuClick = () => {
     menuState === "nav__items-active"
       ? setMenuState("nav__items")
       : setMenuState("nav__items-active");
+
+    navOverlay === "nav" ? setNavOverlay("nav-active") : setNavOverlay("nav");
   };
 
   return (
-    <div className="nav">
+    <div className={navOverlay}>
+      <h2 className={darkMode ? "header__title-dark" : "header__title"}>
+        NewsExplorer
+      </h2>
       <div className="nav__hamburger" onClick={handleMenuClick}>
         <img
           src={
