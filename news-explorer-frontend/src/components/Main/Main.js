@@ -2,7 +2,7 @@ import "./Main.css";
 import React from "react";
 import SearchForm from "../SearchForm/SearchForm";
 
-function Main({}) {
+function Main() {
   return (
     <main className="main">
       <div className="main__content">

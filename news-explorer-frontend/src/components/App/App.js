@@ -13,12 +13,15 @@ import SignUpModal from "../SignUpModal/SignUpModal";
 import SavedNewsHeader from "../SavedNewsHeader/SavedNewsHeader";
 import SavedCards from "../SavedCards/SavedCards";
 import Preloader from "../Preloader/Preloader";
+import NotFound from "../NotFound/NotFound";
 import { cards } from "../../utils/cards";
 
 function App() {
   const [activeModal, setActiveModal] = React.useState("");
-  const [loggedIn, setLoggedIn] = React.useState(false);
-  const [darkMode, setDarkMode] = React.useState(false);
+
+  //turn into react state with addition of backend
+  const loggedIn = false;
+  const darkMode = false;
 
   const handleSignInModal = () => {
     setActiveModal("signin");
@@ -80,6 +83,7 @@ function App() {
             <Main />
           </div>
           <Preloader />
+          <NotFound />
           <SearchResults loggedIn={true} cards={cards} />
 
           <About />

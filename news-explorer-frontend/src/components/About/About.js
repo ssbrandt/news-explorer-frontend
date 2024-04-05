@@ -2,7 +2,7 @@ import "./About.css";
 import React from "react";
 import authorImage from "../../images/authorimage.jpg";
 
-function About({}) {
+function About() {
   return (
     <section className="about">
       <img src={authorImage} alt="author" className="about__image" />
