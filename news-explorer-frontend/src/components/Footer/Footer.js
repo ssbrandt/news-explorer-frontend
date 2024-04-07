@@ -2,6 +2,7 @@ import "./Footer.css";
 import React from "react";
 import github from "../../images/github.svg";
 import facebook from "../../images/facebook.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,15 +10,27 @@ function Footer() {
       <h2 className="footer__title">2024 Supersite, Powered by News API</h2>
       <ul className="footer__items">
         <div className="footer__text">
-          <li className="footer__item">Home</li>
-          <li className="footer__item">Practicum</li>
+          <li className="footer__item">
+            <Link to="/" className="footer__link">
+              Home
+            </Link>
+          </li>
+          <li className="footer__item">
+            <a href="https://practicum.com" className="footer__link">
+              Practicum
+            </a>
+          </li>
         </div>
         <div className="footer__images">
           <li className="footer_item">
-            <img src={github} alt="github" />
+            <a href="https://github.com/ssbrandt">
+              <img src={github} alt="github" />
+            </a>
           </li>
           <li className="footer_item">
-            <img src={facebook} alt="facebook" />
+            <a href="https://facebook.com">
+              <img src={facebook} alt="facebook" />
+            </a>
           </li>
         </div>
       </ul>

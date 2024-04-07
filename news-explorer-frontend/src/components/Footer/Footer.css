@@ -38,6 +38,14 @@
   width: 75px;
 }
 
+.footer__link {
+  text-decoration: none;
+}
+
+.footer__link:visited {
+  color: #1a1b22;
+}
+
 @media screen and (max-width: 880px) {
   .footer {
     margin-top: 0;
