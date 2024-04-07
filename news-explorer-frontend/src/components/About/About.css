@@ -51,21 +51,25 @@
     height: 232px;
     margin-top: 61px;
     margin-right: 32px;
+    margin-bottom: 50px;
     padding: 0px;
   }
 
   .about__content {
     max-width: 424px;
+    margin-top: 40px;
   }
 
   .about__header {
     font-size: 30px;
     line-height: 40px;
+    margin: 0;
   }
 
   .about__description {
     font-size: 18px;
     line-height: 24px;
+    margin-top: 16px;
   }
 }
 
