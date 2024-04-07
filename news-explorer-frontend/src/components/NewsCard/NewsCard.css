@@ -120,7 +120,7 @@
 }
 
 .card__keyword-hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .card__keyword_text {
@@ -133,7 +133,7 @@
 
 @media screen and (max-width: 880px) {
   .card {
-    height: 420px;
+    max-height: 420px;
     width: 224px;
   }
 
@@ -141,19 +141,23 @@
     height: 150px;
     width: 224px;
   }
+
   .card__info {
     padding: 16px;
     max-height: 270px;
+    box-sizing: border-box;
   }
 
   .card__title {
     font-size: 22px;
     line-height: 24px;
+    height: 72px;
+    overflow: hidden;
   }
 
   .card__description {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 22px;
     padding-top: 10px;
     height: 88px;
     overflow: hidden;
@@ -163,6 +167,17 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    padding-top: 12px;
+  }
+
+  .card__badge {
+    top: 8px;
+    right: 8px;
+  }
+
+  .card__select {
+    top: 8px;
+    right: 50px;
   }
 }
 
