@@ -16,19 +16,28 @@ function Footer() {
             </Link>
           </li>
           <li className="footer__item">
-            <a href="https://practicum.com" className="footer__link">
+            <a
+              href="https://practicum.com"
+              className="footer__link"
+              target="_blank"
+              rel="noreferrer"
+            >
               Practicum
             </a>
           </li>
         </div>
         <div className="footer__images">
           <li className="footer_item">
-            <a href="https://github.com/ssbrandt">
+            <a
+              href="https://github.com/ssbrandt"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={github} alt="github" />
             </a>
           </li>
           <li className="footer_item">
-            <a href="https://facebook.com">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <img src={facebook} alt="facebook" />
             </a>
           </li>
