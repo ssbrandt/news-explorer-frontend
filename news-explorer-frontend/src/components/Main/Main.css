@@ -39,12 +39,17 @@
 
   .main__content {
     max-width: 452px;
-    padding: 80px 0px;
+    padding: 34px 0px 44px 0px;
   }
 
   .main__title {
     font-size: 36px;
     line-height: 40px;
+    margin: 0;
+  }
+
+  .main__description {
+    margin-bottom: 54px;
   }
 }
 
