@@ -1,5 +1,4 @@
 .nav {
-  box-shadow: 0px -1px 0px 0px rgb(255 255 255 /20%) inset;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +7,24 @@
   margin: 0 auto;
   padding: 0px 104px;
   box-sizing: border-box;
+}
+
+.header__title {
+  margin: 0;
+  color: #1a1b22;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header__title-dark {
+  margin: 0 20px;
+  color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .nav__items {
@@ -88,6 +105,28 @@
   .nav {
     padding: 0px 40px;
   }
+
+  .nav__items {
+    font-size: 16px;
+  }
+
+  .nav__button {
+    width: 152px;
+    height: 40px;
+  }
+
+  .nav__button-dark {
+    width: 152px;
+    height: 40px;
+  }
+
+  .header__title-dark {
+    margin: 0;
+  }
+
+  /* .nav__item-active {
+    padding: 0px;
+  } */
 }
 
 @media screen and (max-width: 500px) {
