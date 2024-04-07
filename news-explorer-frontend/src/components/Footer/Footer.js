@@ -7,7 +7,9 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
-      <h2 className="footer__title">2024 Supersite, Powered by News API</h2>
+      <h2 className="footer__title">
+        &copy; 2024 Supersite, Powered by News API
+      </h2>
       <ul className="footer__items">
         <div className="footer__text">
           <li className="footer__item">
