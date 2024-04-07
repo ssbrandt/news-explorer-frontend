@@ -19,7 +19,7 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
   };
 
   return (
-    <div className={navOverlay}>
+    <nav className={navOverlay}>
       <h2 className={darkMode ? "header__title-dark" : "header__title"}>
         NewsExplorer
       </h2>
@@ -73,7 +73,7 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
           </>
         )}
       </ul>
-    </div>
+    </nav>
   );
 }
 
