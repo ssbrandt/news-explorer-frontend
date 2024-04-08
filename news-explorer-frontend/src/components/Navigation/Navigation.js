@@ -8,8 +8,10 @@ import closeSmall from "../../images/close-small.svg";
 
 function Navigation({ onSignInModal, loggedIn, darkMode }) {
   const [menuState, setMenuState] = React.useState("nav__items");
-  const [headerState, setHeaderState] = React.useState("header__title-dark");
-  const [headerDarkState, setHeaderDarkState] = React.useState("header__title");
+  const [headerState, setHeaderState] = React.useState(
+    "nav__title nav__title_dark"
+  );
+  const [headerDarkState, setHeaderDarkState] = React.useState("nav__title");
   const [navOverlay, setNavOverlay] = React.useState("nav");
 
   const handleMenuClick = () => {
@@ -19,13 +21,13 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
 
     navOverlay === "nav" ? setNavOverlay("nav-active") : setNavOverlay("nav");
 
-    headerState === "header__title-dark"
-      ? setHeaderState("header__title-active")
-      : setHeaderState("header__title-dark");
+    headerState === "nav__title nav__title_dark"
+      ? setHeaderState("nav__title nav__title_active")
+      : setHeaderState("nav__title nav__title_dark");
 
-    headerDarkState === "header__title"
-      ? setHeaderDarkState("header__title-active")
-      : setHeaderDarkState("header__title");
+    headerDarkState === "nav__title"
+      ? setHeaderDarkState("nav__title nav__title_active")
+      : setHeaderDarkState("nav__title");
   };
 
   return (

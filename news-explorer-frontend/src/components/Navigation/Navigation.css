@@ -10,7 +10,7 @@
   height: 80px;
 }
 
-.header__title {
+.nav__title {
   margin: 0px;
   color: #1a1b22;
   font-family: "Roboto Slab", sans-serif;
@@ -19,13 +19,8 @@
   line-height: 24px;
 }
 
-.header__title-dark {
-  margin: 0px;
+.nav__title_dark {
   color: #fff;
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .nav__items {
@@ -129,7 +124,7 @@
     height: 40px;
   }
 
-  .header__title-dark {
+  .nav__title_dark {
     margin: 0;
   }
 
@@ -148,20 +143,6 @@
     height: 56px;
   }
 
-  .header__title {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .header__title-dark {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   .nav-active {
     background-color: rgb(0, 0, 0, 0.5);
     padding: 0px;
@@ -169,7 +150,21 @@
     box-shadow: 0px -1px 0px 0px rgb(255 255 255 /20%) inset;
   }
 
-  .header__title-active {
+  .nav__title {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nav__title_dark {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .nav__title_active {
     margin: 0px;
     padding: 16px;
     font-size: 16px;
@@ -235,8 +230,5 @@
     height: 56px;
     color: #fff;
     border: 1px solid #fff;
-  }
-
-  .nav__mobileoverlay {
   }
 }
