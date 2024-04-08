@@ -86,8 +86,8 @@
     margin: 0px;
   }
 
-  .about__header {
-    text-align: center;
+  .about__content {
+    margin-top: 24px;
   }
 
   .about__title {
@@ -100,5 +100,7 @@
     font-size: 18px;
     line-height: 24px;
     margin: 0px;
+    padding-top: 16px;
+    margin-bottom: 96px;
   }
 }

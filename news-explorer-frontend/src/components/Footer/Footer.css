@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 500px) {
   .footer {
-    height: 200px;
+    height: 178px;
     max-width: 500px;
     padding: 20px 16px;
     display: flex;
@@ -86,13 +86,10 @@
     align-items: flex-start;
   }
 
-  .footer__item {
-    padding-bottom: 10px;
-  }
-
   .footer__text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 74px;
   }
 }

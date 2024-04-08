@@ -183,18 +183,30 @@
 
 @media screen and (max-width: 500px) {
   .card {
-    height: 440px;
+    min-height: 440px;
     width: 288px;
   }
 
   .card__image {
-    height: 196px;
+    min-height: 196px;
     width: 288px;
   }
 
   .card__badge {
     top: 16px;
     right: 16px;
+  }
+
+  .card__title {
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+
+  .card__source {
+    padding-top: 8px;
   }
 
   .card__keyword-visible {
