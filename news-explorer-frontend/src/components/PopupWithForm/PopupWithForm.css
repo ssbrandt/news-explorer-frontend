@@ -115,6 +115,10 @@
   left: 165px;
 }
 
+.form__redirect:hover {
+  cursor: pointer;
+}
+
 .form__submit-options {
   display: flex;
 }
@@ -148,7 +152,7 @@
     width: 14px;
   }
 
-  .form__submit {
+  .form__submit-button {
     width: 282px;
     height: 64px;
     margin-top: 16px;
