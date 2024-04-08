@@ -109,7 +109,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  opacity: 50%;
   margin-left: 12px;
   position: absolute;
   bottom: 28px;
@@ -128,19 +127,30 @@
   display: flex;
 }
 
+.form__redirecttext {
+  color: #2f71e5;
+}
+
 @media screen and (max-width: 500px) {
   .modal {
     width: 100vw;
+    background-image: url("../../images/mainbackground.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .modal__container {
     width: 100vw;
     max-width: 500px;
-    height: 90vh;
+    height: 94%;
+    top: 6%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 16px;
   }
 
   .modal__close {
-    top: -30px;
+    top: -25px;
     right: 10px;
     height: 14px;
     width: 14px;
@@ -157,7 +167,9 @@
   }
 
   .form__redirect {
-    top: -160px;
-    left: 205px;
+    position: relative;
+    bottom: -108px;
+    margin: 0px;
+    left: 0px;
   }
 }

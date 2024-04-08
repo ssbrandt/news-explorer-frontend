@@ -49,7 +49,7 @@ const SignUpModal = ({ isOpen, onCloseModal, onRedirect }) => {
           type="text"
           id="email"
           name="email"
-          placeholder="Enter email"
+          placeholder="Enter your email"
           required
           value={email}
           onChange={handleEmailChange}
@@ -63,7 +63,7 @@ const SignUpModal = ({ isOpen, onCloseModal, onRedirect }) => {
           type="text"
           id="password"
           name="password"
-          placeholder="Password"
+          placeholder="Enter your password"
           required
           value={password}
           onChange={handlePasswordChange}
@@ -84,7 +84,7 @@ const SignUpModal = ({ isOpen, onCloseModal, onRedirect }) => {
         ></input>
       </fieldset>
       <button type="button" className="form__redirect" onClick={onRedirect}>
-        or Sign In
+        or <span className="form__redirecttext">Sign In</span>
       </button>
     </PopupWithForm>
   );
