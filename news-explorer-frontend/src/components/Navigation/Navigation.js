@@ -19,7 +19,7 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
       ? setMenuState("nav__items")
       : setMenuState("nav__items-active");
 
-    navOverlay === "nav" ? setNavOverlay("nav-active") : setNavOverlay("nav");
+    navOverlay === "nav" ? setNavOverlay("mobile-nav") : setNavOverlay("nav");
 
     headerState === "nav__title nav__title_dark"
       ? setHeaderState("nav__title nav__title_active")
@@ -52,12 +52,14 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
             <>
               {" "}
               <Link to="/" style={{ textDecoration: "none" }}>
-                <li className="nav__item nav__item-active">Home</li>
+                <li className="nav__item nav__item_theme_light nav__item_theme_active">
+                  Home
+                </li>
               </Link>
-              <li className="nav__item">
+              <li className="nav__item nav__item_theme_light">
                 <button
                   type="text"
-                  className="nav__button"
+                  className="nav__button nav__button-light"
                   onClick={onSignInModal}
                 >
                   Sign In
@@ -86,15 +88,15 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
             <>
               {" "}
               <Link to="/" style={{ textDecoration: "none" }}>
-                <li className="nav__item-dark">Home</li>
+                <li className="nav__item nav__item_theme_dark">Home</li>
               </Link>
               <Link to="/saved-news" style={{ textDecoration: "none" }}>
-                <li className="nav__item-dark nav__item-active-dark">
+                <li className="nav__item nav__item_theme_dark nav__item_theme_active_dark">
                   Saved Articles
                 </li>
               </Link>
               <li className="nav__item">
-                <button type="text" className="nav__button-dark">
+                <button type="text" className="nav__button nav__button-dark">
                   Elise
                   <img src={logOutImage} className="nav__logout" alt="logout" />
                 </button>
