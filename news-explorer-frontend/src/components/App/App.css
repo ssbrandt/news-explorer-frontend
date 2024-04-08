@@ -46,7 +46,7 @@
   src: url("../../fonts/inter-400-regular.woff") format(woff);
 }
 
-.App {
+.app {
   font-family: "Roboto Slab", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -55,7 +55,7 @@
   margin: 0 auto;
 }
 
-.background__image {
+.app__background-image {
   background-image: url("../../images/mainbackground.svg");
   background-size: cover;
   background-repeat: no-repeat;

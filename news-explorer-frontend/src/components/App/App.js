@@ -71,10 +71,10 @@ function App() {
   }, [activeModal]);
 
   return (
-    <div className="App">
+    <div className="app">
       <Switch>
         <Route exact path="/">
-          <div className="background__image">
+          <div className="app__background-image">
             <Header
               onSignInModal={handleSignInModal}
               loggedIn={true}

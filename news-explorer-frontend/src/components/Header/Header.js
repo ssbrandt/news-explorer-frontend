@@ -4,7 +4,9 @@ import Navigation from "../Navigation/Navigation";
 
 function Header({ onSignInModal, loggedIn, darkMode }) {
   return (
-    <header className={darkMode ? "header-dark" : "header"}>
+    <header
+      className={darkMode ? " header header_dark" : "header header_light"}
+    >
       <Navigation
         onSignInModal={onSignInModal}
         loggedIn={loggedIn}
