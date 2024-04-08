@@ -64,7 +64,7 @@ const SignInModal = ({ isOpen, onCloseModal, onRedirect }) => {
         ></input>
       </fieldset>
       <button type="button" className="form__redirect" onClick={onRedirect}>
-        or <span className="form__redirecttext">Sign Up</span>
+        or <span className="form__redirect-text">Sign Up</span>
       </button>
     </PopupWithForm>
   );

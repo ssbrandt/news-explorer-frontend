@@ -84,7 +84,7 @@
   box-sizing: border-box;
 }
 
-.form__submit {
+.form__submit-button {
   width: 358px;
   height: 64px;
   background-color: #e6e8eb;
@@ -115,19 +115,11 @@
   left: 165px;
 }
 
-.form__redirect-hidden {
-  visibility: hidden;
-}
-
-.form__redirect-visible {
-  visibility: visible;
-}
-
 .form__submit-options {
   display: flex;
 }
 
-.form__redirecttext {
+.form__redirect-text {
   color: #2f71e5;
 }
 

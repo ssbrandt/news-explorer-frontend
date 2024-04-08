@@ -6,13 +6,13 @@ import trashcan from "../../images/trash.svg";
 
 function NewsCard({ loggedIn, card }) {
   const [showBadgeMessage, setShowBadgeMessage] = React.useState(
-    "card__select-hidden"
+    " card__select card__select_hidden"
   );
 
   const handleBadgeClick = () => {
-    showBadgeMessage === "card__select-hidden"
-      ? setShowBadgeMessage("card__select")
-      : setShowBadgeMessage("card__select-hidden");
+    showBadgeMessage === "card__select card__select_visible"
+      ? setShowBadgeMessage("card__select card__select_hidden")
+      : setShowBadgeMessage("card__select card__select_visible");
   };
   return (
     <li className="card">
@@ -27,14 +27,18 @@ function NewsCard({ loggedIn, card }) {
         <img src={loggedIn ? bookmark : trashcan} alt="bookmark" />
       </div>
       <div className={showBadgeMessage}>
-        <p className="card__select_text">
-          {loggedIn ? "Sign in to save Article" : "Removed from Save"}
+        <p className="card__select-text">
+          {loggedIn ? "Sign in to save article" : "Removed from save"}
         </p>
       </div>
       <div
-        className={loggedIn ? "card__keyword-hidden" : "card__keyword-visible"}
+        className={
+          loggedIn
+            ? "card__keyword card__keyword_hidden"
+            : "card__keyword card__keyword_visible"
+        }
       >
-        <p className="card__keyword_text">{card.keyword}</p>
+        <p className="card__keyword-text">{card.keyword}</p>
       </div>
     </li>
   );
