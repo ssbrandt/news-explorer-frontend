@@ -73,6 +73,7 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
           </>
         )}
       </ul>
+      <div className="nav__mobileoverlay"></div>
     </nav>
   );
 }
