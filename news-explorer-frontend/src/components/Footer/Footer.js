@@ -29,7 +29,7 @@ function Footer() {
           </li>
         </div>
         <div className="footer__images">
-          <li className="footer_item">
+          <li className="footer__item">
             <a
               href="https://github.com/ssbrandt"
               target="_blank"
@@ -38,7 +38,7 @@ function Footer() {
               <img src={github} alt="github" />
             </a>
           </li>
-          <li className="footer_item">
+          <li className="footer__item">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <img src={facebook} alt="facebook" />
             </a>
