@@ -12,14 +12,16 @@ function Navigation({ onSignInModal, loggedIn, darkMode }) {
     "nav__title nav__title_dark"
   );
   const [headerDarkState, setHeaderDarkState] = React.useState("nav__title");
-  const [navOverlay, setNavOverlay] = React.useState("nav");
+  const [navOverlay, setNavOverlay] = React.useState("nav nav_desktop");
 
   const handleMenuClick = () => {
     menuState === "nav__items-active"
       ? setMenuState("nav__items")
       : setMenuState("nav__items-active");
 
-    navOverlay === "nav" ? setNavOverlay("mobile-nav") : setNavOverlay("nav");
+    navOverlay === "nav nav_desktop"
+      ? setNavOverlay("nav nav_mobile")
+      : setNavOverlay("nav nav_desktop");
 
     headerState === "nav__title nav__title_dark"
       ? setHeaderState("nav__title nav__title_active")

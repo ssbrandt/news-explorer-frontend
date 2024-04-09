@@ -132,7 +132,13 @@
     height: 56px;
   }
 
-  .mobile-nav {
+  .nav_desktop {
+    padding: 16px;
+    height: 56px;
+  }
+
+  .nav_mobile {
+    display: block;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 0px;
     height: 100vh;
