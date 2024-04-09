@@ -73,6 +73,28 @@
   align-items: center;
 }
 
+.card__badge_bookmark {
+  background-image: url("../../images/bookmark.svg");
+  background-size: 14px 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__badge_bookmark:active {
+  background-image: url("../../images/bookmarkclicked.svg");
+}
+
+.card__badge_trash {
+  background-image: url("../../images/trash.svg");
+  background-size: 18px 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__badge_trash:active {
+  background-image: url("../../images/trashclicked.svg");
+}
+
 .card__badge:hover {
   cursor: pointer;
 }

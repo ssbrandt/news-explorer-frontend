@@ -104,7 +104,8 @@
 }
 
 .form__redirect {
-  all: unset;
+  background-color: #fff;
+  border: none;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;

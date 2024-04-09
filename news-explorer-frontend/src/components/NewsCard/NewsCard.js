@@ -1,8 +1,6 @@
 import "./NewsCard.css";
 import "./NewsCard.css";
 import React from "react";
-import bookmark from "../../images/bookmark.svg";
-import trashcan from "../../images/trash.svg";
 
 function NewsCard({ loggedIn, card }) {
   const [showBadgeMessage, setShowBadgeMessage] = React.useState(
@@ -23,9 +21,14 @@ function NewsCard({ loggedIn, card }) {
         <p className="card__description">{card.description}</p>
         <p className="card__source">{card.source}</p>
       </div>
-      <div className="card__badge" onClick={handleBadgeClick}>
-        <img src={loggedIn ? bookmark : trashcan} alt="bookmark" />
-      </div>
+      <div
+        className={
+          loggedIn
+            ? "card__badge card__badge_bookmark"
+            : "card__badge card__badge_trash"
+        }
+        onClick={handleBadgeClick}
+      ></div>
       <div className={showBadgeMessage}>
         <p className="card__select-text">
           {loggedIn ? "Sign in to save article" : "Removed from save"}
