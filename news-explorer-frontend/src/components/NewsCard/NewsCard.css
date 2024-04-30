@@ -1,0 +1,249 @@
+.card {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 400px;
+  height: 576px;
+}
+
+.card__image {
+  width: 400px;
+  height: 272px;
+  overflow: hidden;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card__info {
+  height: 304px;
+  padding: 24px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.card__date {
+  color: #b6bcbf;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card__title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.card__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  padding-top: 16px;
+  height: 125px;
+}
+
+.card__source {
+  color: #b6bcbf;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 18px;
+}
+
+.card__badge {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__badge_bookmark {
+  background-image: url("../../images/bookmark.svg");
+  background-size: 14px 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__badge_bookmark:active {
+  background-image: url("../../images/bookmarkclicked.svg");
+}
+
+.card__badge_trash {
+  background-image: url("../../images/trash.svg");
+  background-size: 18px 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__badge_trash:active {
+  background-image: url("../../images/trashclicked.svg");
+}
+
+.card__badge:hover {
+  cursor: pointer;
+}
+
+.card__select {
+  height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 26px;
+  right: 68px;
+  padding: 11px 20px;
+  box-sizing: border-box;
+}
+
+.card__select_visible {
+  visibility: visible;
+}
+
+.card__select_hidden {
+  visibility: hidden;
+}
+
+.card__select-text {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.card__keyword {
+  height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 11px 20px;
+  box-sizing: border-box;
+}
+
+.card__keyword_visibile {
+  visibility: visible;
+}
+
+.card__keyword_hidden {
+  display: none;
+}
+
+.card__keyword-text {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 880px) {
+  .card {
+    max-height: 420px;
+    width: 224px;
+  }
+
+  .card__image {
+    height: 150px;
+    width: 224px;
+  }
+
+  .card__info {
+    padding: 16px;
+    max-height: 270px;
+    box-sizing: border-box;
+  }
+
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
+    height: 72px;
+    overflow: hidden;
+  }
+
+  .card__description {
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 10px;
+    height: 88px;
+    overflow: hidden;
+  }
+
+  .card__source {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 12px;
+  }
+
+  .card__badge {
+    top: 8px;
+    right: 8px;
+  }
+
+  .card__select {
+    top: 52px;
+    right: 8px;
+  }
+
+  .card__keyword-visible {
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    min-height: 440px;
+    width: 288px;
+  }
+
+  .card__image {
+    min-height: 196px;
+    width: 288px;
+  }
+
+  .card__badge {
+    top: 16px;
+    right: 16px;
+  }
+
+  .card__title {
+    font-size: 18px;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+
+  .card__source {
+    padding-top: 8px;
+  }
+
+  .card__keyword-visible {
+    top: 16px;
+    left: 16px;
+  }
+
+  .card__select {
+    top: 16px;
+    right: 56px;
+    padding: 11px 10px;
+  }
+}

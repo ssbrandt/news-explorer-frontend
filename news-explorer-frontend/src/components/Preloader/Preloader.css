@@ -1,0 +1,34 @@
+.circle-preloader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f6f7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.circle-preloader__spinner {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #444;
+  border-bottom-color: #888;
+
+  border-radius: 50%;
+  animation: spin 0.75s infinite linear;
+}
+
+.circle-preloader__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #b6bcbf;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

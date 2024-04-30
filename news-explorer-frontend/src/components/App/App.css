@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Roboto Slab";
+  font-family: 400;
+  src: url("../../fonts/roboto-slab-700.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-family: 700;
+  src: url("../../fonts/roboto-slab-400-regular.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url("../../fonts/roboto-900.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../../fonts/roboto-700.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../../fonts/roboto-500.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../../fonts/roboto-400-regular.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  src: url("../../fonts/inter-500.woff") format(woff);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("../../fonts/inter-400-regular.woff") format(woff);
+}
+
+.app {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.app__background-image {
+  background-image: url("../../images/mainbackground.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
