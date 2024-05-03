@@ -15,9 +15,11 @@ import SavedCards from "../SavedCards/SavedCards";
 import Preloader from "../Preloader/Preloader";
 import NotFound from "../NotFound/NotFound";
 import { cards } from "../../utils/cards";
+import { getNews } from "../../utils/api";
 
 function App() {
   const [activeModal, setActiveModal] = React.useState("");
+  const [newsCards, setNewsCards] = React.useState({});
 
   //turn into react state with addition of backend
   const loggedIn = false;
@@ -70,6 +72,14 @@ function App() {
     };
   }, [activeModal]);
 
+  React.useEffect(() => {
+    getNews()
+      .then((data) => {
+        setNewsCards(data.articles);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="app">
       <Switch>
@@ -84,7 +94,7 @@ function App() {
           </div>
           <Preloader />
           <NotFound />
-          <SearchResults loggedIn={true} cards={cards} />
+          <SearchResults loggedIn={true} cards={newsCards} />
 
           <About />
           <Footer />

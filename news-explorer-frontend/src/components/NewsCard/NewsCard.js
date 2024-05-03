@@ -14,12 +14,12 @@ function NewsCard({ loggedIn, card }) {
   };
   return (
     <li className="card">
-      <img src={card.image} alt="news" className="card__image" />
+      <img src={card.urlToImage} alt="news" className="card__image" />
       <div className="card__info">
-        <p className="card__date">{card.date}</p>
+        <p className="card__date">{card.publishedAt}</p>
         <h2 className="card__title">{card.title}</h2>
         <p className="card__description">{card.description}</p>
-        <p className="card__source">{card.source}</p>
+        <p className="card__source">{card.source.name}</p>
       </div>
       <div
         className={

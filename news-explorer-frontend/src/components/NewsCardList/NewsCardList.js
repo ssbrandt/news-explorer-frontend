@@ -6,8 +6,8 @@ function NewsCardList({ loggedIn, cards }) {
   return (
     <div className="cards">
       <ul className="cards__list">
-        {cards.map((item) => (
-          <NewsCard loggedIn={loggedIn} key={item._id} card={item} />
+        {Object.entries(cards).map(([key, val], i) => (
+          <NewsCard loggedIn={loggedIn} key={key} card={val} />
         ))}
       </ul>
     </div>
