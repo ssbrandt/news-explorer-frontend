@@ -13,7 +13,6 @@ import SignUpModal from "../SignUpModal/SignUpModal";
 import SavedNewsHeader from "../SavedNewsHeader/SavedNewsHeader";
 import SavedCards from "../SavedCards/SavedCards";
 import Preloader from "../Preloader/Preloader";
-import NotFound from "../NotFound/NotFound";
 import { cards } from "../../utils/cards";
 import { getNews } from "../../utils/api";
 
@@ -92,8 +91,7 @@ function App() {
             />
             <Main />
           </div>
-          <Preloader />
-          <NotFound />
+          {/* <Preloader /> */}
           <SearchResults loggedIn={true} cards={newsCards} />
 
           <About />
